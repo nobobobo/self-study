@@ -1,0 +1,14 @@
+[project]
+name = "self-study"
+version = "0.1.0"
+description = "Intensive 2-month study of Deep Learning, NLP, and LLMs from scratch"
+authors = [{ name = "Noboru Hayashi", email = "noboru@degasafrica.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "torch",
+]
+
+[tool.setuptools]
+packages = ["shared_utils"]
