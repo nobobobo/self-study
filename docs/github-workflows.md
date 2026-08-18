@@ -84,7 +84,7 @@ Pull Request 作成・更新時に、Claude Code のコードレビュー機能�
 2. **Run Claude Code Review**: `anthropics/claude-code-action@v1` を実行
    - `claude_code_oauth_token`: 認証用の OAuth トークン
    - `plugin_marketplaces` / `plugins`: `anthropics/claude-code` リポジトリのプラグインマーケットプレイスから `code-review` プラグインを読み込む
-   - `prompt`: `/code-review:code-review --comment` コマンドを実行し、対象 PR にインラインコメントとしてレビュー結果を投稿する
+   - `prompt`: `/code-review:code-review --comment ${{ github.repository }}/pull/${{ github.event.pull_request.number }}` コマンドを実行し、対象 PR にインラインコメントとしてレビュー結果を投稿する
    - `claude_args`: `mcp__github_inline_comment__create_inline_comment` ツールを許可し、インラインコメント投稿を可能にする
 
 ---
