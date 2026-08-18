@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ブロック崩し</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: #1e1e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #f0f0f0;
+  }
+  #game-wrapper {
+    text-align: center;
+  }
+  canvas {
+    background: #0d0d1a;
+    border: 2px solid #888;
+    display: block;
+  }
+  #info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
+  <div id="game-wrapper">
+    <canvas id="gameCanvas" width="480" height="640"></canvas>
+    <div id="info">←/→ または マウス でパドル移動 | Space で開始・再開</div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
